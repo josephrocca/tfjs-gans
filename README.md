@@ -1,4 +1,4 @@
-GAN models (including DCGAN and ProGAN) running with tensorflow.js
+Generative models (including ProGAN) running with tensorflow.js
 
 https://josephrocca.github.io/tfjs-gans/index.html
 
