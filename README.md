@@ -1,5 +1,7 @@
 GAN models (including DCGAN and ProGAN) running with tensorflow.js
 
+https://josephrocca.github.io/tfjs-gans/index.html
+
 # Setup
 
 Download this repo and serve the contents of the folder with a static webserver of your choice. For example:
