@@ -1,0 +1,38 @@
+<h1>TensorFlow.js GAN Examples</h1>
+
+<canvas id="outputCanvas" width="128" height="128" style="width:200px;"></canvas>
+
+<hr>
+
+<select id="modelManifestSelect" onchange="gan=undefined">
+  <option value="model/resnet128/manifest.json">resnet128</option>
+  <option value="model/progan128/manifest.json">progan128</option>
+  <option value="model/progan128_quantized_uint8/manifest.json">progan128_quantized_uint8</option>
+  <option value="model/geo/manifest.json">geo</option>
+</select>
+
+<hr>
+
+<button id="genBtn" onclick="generate()">generate</button>
+
+<script src="./tf.js"></script>
+<script src="./gan.js"></script>
+
+<script>
+let gan;
+let ctx = outputCanvas.getContext("2d");
+
+async function generate() {
+  if(!gan) {
+    genBtn.textContent = "loading model files... (could take a while - check network tab in dev tools)";
+    gan = new GAN(modelManifestSelect.value);
+    await gan.init();
+    genBtn.textContent = "generate";
+  }
+
+  let result = await gan.generate();
+  let img = new ImageData(result.raw, 128, 128);
+  ctx.putImageData(img, 0, 0);
+}
+</script>
+	

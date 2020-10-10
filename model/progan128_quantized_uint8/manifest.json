@@ -1,0 +1,7 @@
+{
+    "description": "ProGAN, 128x128, quantized_uint8 (23 MB)",
+    "model": "/model/progan128_quantized_uint8/model.json",
+    "modelSize": 128,
+    "modelLatentDim": 512,
+    "modelType": "graph"
+}
