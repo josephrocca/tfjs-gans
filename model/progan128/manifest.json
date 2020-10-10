@@ -1,6 +1,6 @@
 {
     "description": "ProGAN, 128x128 (92 MB)",
-    "model": "./models/progan128/model.json",
+    "model": "./model/progan128/model.json",
     "modelSize": 128,
     "modelLatentDim": 512,
     "modelType": "graph"
