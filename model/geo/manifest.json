@@ -1,6 +1,6 @@
 {
     "description": "Aerial Images of Santiago, Chile 64x64 (16 MB)",
-    "model": "model/geo/model.json",
+    "model": "./model/geo/model.json",
     "modelSize": 128,
     "modelLatentDim": 128,
     "transpose": [1, 2, 0],
