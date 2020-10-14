@@ -17,4 +17,9 @@ The server will say something like "Start listening on 127.0.0.1:8000", and so y
 
 ## Training a model
 
-https://colab.research.google.com/drive/1WmZRWG1L1_SuBwDVyiexcLkGSn8gqYap
+You can use [this colab notebook](https://colab.research.google.com/drive/1WmZRWG1L1_SuBwDVyiexcLkGSn8gqYap) to train your own DCGAN, or you can convert a ProGAN/PGGAN, or BigGAN model (among others) from [tfhub.dev](https://tfhub.dev/) to tfjs format by opening a new Google Colab notebook and running the following code:
+```
+!pip install tensorflowjs[wizard].
+!tensorflowjs_wizard
+```
+Enter a tfhub URL like `https://tfhub.dev/google/progan-128/1` when prompted, and use all the default options. Then download the model files. More detailed instructions are in the [tfjs-converter repo](https://github.com/tensorflow/tfjs/tree/master/tfjs-converter).
