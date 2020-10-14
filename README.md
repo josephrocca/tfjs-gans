@@ -1,4 +1,4 @@
-Generative models (including ProGAN) running with tensorflow.js (inference only, no training)
+GAN models in the browser with tensorflow.js
 
 https://josephrocca.github.io/tfjs-gans/index.html
 
