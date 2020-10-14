@@ -2,7 +2,7 @@ Generative models (including ProGAN) running with tensorflow.js (inference only,
 
 https://josephrocca.github.io/tfjs-gans/index.html
 
-# Setup
+## Setup
 
 Download this repo and serve the contents of the folder with a static webserver of your choice. For example:
 
@@ -14,3 +14,7 @@ deno run --allow-net --allow-read=. https://raw.githubusercontent.com/josephrocc
 ```
 
 The server will say something like "Start listening on 127.0.0.1:8000", and so you'd open up `127.0.0.1:8000` in your browser.
+
+## Training a model
+
+https://colab.research.google.com/drive/1WmZRWG1L1_SuBwDVyiexcLkGSn8gqYap
