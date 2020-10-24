@@ -1,6 +1,7 @@
 GAN models in the browser with tensorflow.js
 
-https://josephrocca.github.io/tfjs-gans/index.html
+* Demo: https://josephrocca.github.io/tfjs-gans/index.html
+* See also: https://github.com/josephrocca/tfjs-acgan-browser-training
 
 ## Setup
 
